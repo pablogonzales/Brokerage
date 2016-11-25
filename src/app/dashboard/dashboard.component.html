@@ -1,0 +1,79 @@
+<div #dashboardContentHolder class="dashboard-header dashboard-layout-transparent" track-scroll>
+   <mdl-layout #mdlLayout1="mdlLayout" mdl-layout-header-seamed mdl-ripple="true">
+      <mdl-layout-header>
+         <mdl-layout-header-row>
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <mdl-layout-title>International Rally Brokerage</mdl-layout-title>
+         </mdl-layout-header-row>
+      </mdl-layout-header>
+      <mdl-layout-drawer>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" (click)="mdlLayout1.closeDrawer()">Home</a>
+            <a class="mdl-navigation__link" (click)="mdlLayout1.closeDrawer()">Products</a>
+            <a class="mdl-navigation__link" (click)="mdlLayout1.closeDrawer()">Contact Us</a>
+         </nav>
+      </mdl-layout-drawer>
+      <mdl-layout-content class="dashboard-intro-slider-holder">
+         <div class="dashboard-intro-content-holder" *ngIf="showContentText">
+           <div>
+             <div class="animated fadeInDown">
+               <div class="dashboard-intro-content-text">
+                 <h2>QUALITY IS THE BEST INVESTMENT</h2>
+               </div>
+               <div class="dashboard-intro-content-text">
+                 <span class="dashboard-intro-content-supporting-text">Get the best quality of affordable medical equipments</span>
+               </div>
+             </div>
+             <div class="dashboard-intro-content-button">
+               <button mdl-button mdl-button-type="raised" mdl-colored="accent">
+                View Products
+               </button>
+             </div>
+           </div>
+         </div>
+         <div class="dashboard-intro-animated-mouse animated fadeInDown" *ngIf="showContentText">
+           <div class="mouse">
+             <div class="wheel"></div>
+           </div>
+           <div>
+             <span class="unu" id="span"></span>
+             <span class="doi" id="span"></span>
+             <span class="trei" id="span"></span>
+           </div>
+         </div>
+      </mdl-layout-content>
+   </mdl-layout>
+</div>
+<div>
+  <div class="mdl-grid" style="justify-content: center">
+    <div class="mdl-cell mdl-cell--3-col dashboard-about-cell">
+      <mdl-icon class="dashboard-about-icon">thumb_up</mdl-icon>
+      <h3 class="dashboard-about-header">QUALITY</h3>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col dashboard-about-cell">
+      <mdl-icon class="dashboard-about-icon">shopping_cart</mdl-icon>
+      <h3 class="dashboard-about-header">AFFORDABLE</h3>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col dashboard-about-cell">
+      <mdl-icon class="dashboard-about-icon">star</mdl-icon>
+      <h3 class="dashboard-about-header">BEST</h3>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col dashboard-about-cell">
+      <mdl-icon class="dashboard-about-icon">build</mdl-icon>
+      <h3 class="dashboard-about-header">EFFICIENT</h3>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
+    </div>
+  </div>
+</div>
+<!-- <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Brokerage</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer> -->
